@@ -1,0 +1,185 @@
+{
+  "id": "3d55b759-fb30-4773-a6e2-160e9c79a4dc",
+  "version": "2.0",
+  "name": "Pruebas Taller 1",
+  "url": "https://www.linio.com.co/",
+  "tests": [{
+    "id": "0fbd58f0-60f8-405b-8710-b9173f9c5ab3",
+    "name": "001. CP Comprar producto",
+    "commands": [{
+      "id": "2e038f27-97b9-415c-9255-b5765018ec54",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.linio.com.co/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4864b9a5-bc40-4c18-9ddd-8076ceee0aad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b7fe48d-99ca-4b5e-a860-10d136ce9c0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-hamburger",
+      "targets": [
+        ["css=.icon-hamburger", "css:finder"],
+        ["xpath=//div[@id='open-left-menu']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b63d950-9945-45d5-a8c0-1e411b1afc6c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//div[@id='main-menu']/nav/ul/li[5]/a/span[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac578fed-6c32-4125-993f-12c9513c7396",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='main-menu']/div/div[5]/div/div/div/a[2]",
+      "targets": [
+        ["linkText=Portátiles", "linkText"],
+        ["css=.col-12:nth-child(5) .col-6:nth-child(2) > .subcategory-link:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Portátiles')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-menu']/div/div[5]/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/c/computacion/pc-portatil?price=699900-16463990000')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddc2c04c-a276-43a5-9f82-7288234d268c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='catalogue-product-container']/div[4]/a/div[2]/p/span",
+      "targets": [
+        ["css=.catalogue-product:nth-child(4) .title-section", "css:finder"],
+        ["xpath=//div[@id='catalogue-product-container']/div[4]/a/div[2]/p/span", "xpath:idRelative"],
+        ["xpath=//div[4]/a/div[2]/p/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Portatil Asus R5 4600h 16gb Ram 512gb So...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6de77614-f9b9-4a5f-83c0-62185be09e47",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='display-zoom']/div[2]/div[3]/div[2]/div/div/button",
+      "targets": [
+        ["css=.select-dropdown-button", "css:finder"],
+        ["xpath=//div[@id='display-zoom']/div[2]/div[3]/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "700dcc3c-b363-4a71-b7a1-71b3071b9040",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@id='select-dropdown-list-product-quantity']/li[2]",
+      "targets": [
+        ["css=.select-dropdown-list-item:nth-child(2)", "css:finder"],
+        ["xpath=//ul[@id='select-dropdown-list-product-quantity']/li[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/ul/li[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26e6121b-bba6-478c-b516-376d4cd654ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=buy-now",
+      "targets": [
+        ["id=buy-now", "id"],
+        ["css=#buy-now", "css:finder"],
+        ["xpath=//button[@id='buy-now']", "xpath:attributes"],
+        ["xpath=//div[@id='display-zoom']/div[2]/div[3]/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Añadir al carrito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "649b6e56-9c1c-4a15-8231-de8175852abe",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Ir a mi carrito')])[2]",
+      "targets": [
+        ["linkText=Ir a mi carrito", "linkText"],
+        ["css=.btn-go-to-cart:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Ir a mi carrito')])[2]", "xpath:link"],
+        ["xpath=//div[@id='alert-add-to-cart']/div/div/div[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/cart')])[13]", "xpath:href"],
+        ["xpath=//div[6]/div/div/div/div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74c22df5-9523-4962-bc0f-7edcf4e65b2d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Procesar Compra",
+      "targets": [
+        ["linkText=Procesar Compra", "linkText"],
+        ["css=.summary-btn-process-pay:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Procesar Compra')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/checkout/payment')]", "xpath:href"],
+        ["xpath=//ul/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Procesar Compra')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "639ea16f-7f78-4ee8-820a-f69d7af7a321",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_form_email",
+      "targets": [
+        ["id=login_form_email", "id"],
+        ["name=login_form[email]", "name"],
+        ["css=#login_form_email", "css:finder"],
+        ["xpath=//input[@id='login_form_email']", "xpath:attributes"],
+        ["xpath=//div[@id='login-form']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "chceho89@hotmail.com"
+    }, {
+      "id": "ba36b1e8-53be-467e-bfeb-d61c2dcb3f46",
+      "comment": "",
+      "command": "type",
+      "target": "id=login_form_password",
+      "targets": [
+        ["id=login_form_password", "id"],
+        ["name=login_form[password]", "name"],
+        ["css=#login_form_password", "css:finder"],
+        ["xpath=//input[@id='login_form_password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-form']/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "4fa8dcf2-2b21-4960-9db3-671258eb2972",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [
+        ["css=.ng-dirty > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='login-form']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,' Iniciar sesión segura')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e7f8ce60-949c-424a-bf21-cbed12717366",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.linio.com.co/"],
+  "plugins": []
+}
